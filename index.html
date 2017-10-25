@@ -1,0 +1,42 @@
+<html>
+    <head>
+      <title>Webvr online devices</title>
+      <meta name="description" content="Incrementing and decrementing score"></meta>
+      <meta property="og:image" content="https://raw.githubusercontent.com/ngokevin/kframe/master/components/state/examples/score/preview.gif"></meta>
+      <script src="https://rawgit.com/aframevr/aframe/a30dbb0/dist/aframe-master.min.js"></script>
+      <script src="js/aframe-state-component.min.js"></script>
+      <script src="js/main.js"></script>
+      <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+      <link rel="shortcut icon" href="img/favicon.ico">
+    </head>
+    <body>
+    <!-- <a-scene inspector="url: http://localhost:3333/dist/aframe-inspector.js"> -->
+    <a-scene>
+        
+    <!-- blocks -->
+        <a-assets>
+            <img id="rasp1" crossorigin="anonymous" src="img/rasp1.jpg">
+            <img id="rasp2" crossorigin="anonymous" src="img/rasp2.jpg">
+            <img id="rasp3" crossorigin="anonymous" src="img/rasp3.jpg">
+        </a-assets> 
+
+        <!-- blocks -->
+
+        <a-entity src="rasp1" text="value: Raspberrypi1; align: center; width: 2" geometry="primitive: plane" material="color: #484848" position="-2 1 -3" detail-action></a-entity>  
+        <a-entity src="rasp2" text="value: Raspberrypi2; align: center; width: 2" geometry="primitive: plane" material="color: #484848" position="0 1 -3" detail-action></a-entity>
+        <a-entity src="rasp3" text="value: Raspberrypi3; align: center; width: 2" geometry="primitive: plane" material="color: #484848" position="2 1 -3" detail-action></a-entity>
+        <a-sky color="#F9B002"></a-sky>
+  
+
+        <!-- Camera -->
+        <a-camera>
+          <a-cursor color="#FAFAFA"></a-cursor>
+        </a-camera>
+
+        <!-- Camera + cursor. -->
+
+        <!-- events van cursor --> 
+      </a-scene>
+    </body>
+  </html>
